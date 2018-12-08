@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+
+
+html{
+  background: url("https://www.grandcircus.co/wp-content/themes/grandcircus/_assets/img/grant-chirpus-student.png");
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  width:100%;
+}
+*{
+  font-family:tangerine;
+  border:solid 1px;
+}
+.container{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  height:auto;
+  grid-template-areas: "header header header"
+                        "left middle right";
+  grid-row-gap:10px;
+  grid-column-gap:10px;
+}
+
+.item-1 {
+  grid-area: header;
+}
+.item-1 ul{
+  padding:1% 1% 1% 10%;
+  margin:0;
+}
+.item-1 ul li{
+  display:inline-block;
+  width: 24%;
+  font-size:18px;
+  letter-spacing: 3px;
+}
+.item-2 {
+  grid-area: left;
+    height: 600px;
+    text-align: center;
+}
+
+a:hover{
+  letter-spacing: 5px;
+  transition: 2s;
+}
+.item-2{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:10px;
+
+}
+.item-2 h2{
+  width: 90%;
+  padding: 20px 0px 20px 0px;
+}
+.item-2 img{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.item-3 {
+  grid-area: middle;
+    height: 600px;
+}
+.item-4 {
+  grid-area: right;
+  height: 600px;
+}
